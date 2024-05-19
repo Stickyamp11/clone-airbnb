@@ -1,0 +1,43 @@
+.header-user{
+display: flex;
+align-items: center;
+}
+
+.header-user__putyour{
+    margin: 0 8px 0 8px;
+    border-radius: 30px;
+    padding: 8px;
+}
+.header-user__lang{
+    padding: 8px;
+    border-radius: 30px;
+    margin: 0 8px 0 8px;
+
+}
+.header-user__lang__img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.header-user__user-menu{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+    margin: 0 8px 0 8px;
+
+}
+
+.header-user__user-menu__menu{
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 8px;
+}
+
+.header-user__user-menu__user{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 8px;
+
+}

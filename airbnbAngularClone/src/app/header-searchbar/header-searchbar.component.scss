@@ -1,0 +1,26 @@
+.header-searchbar__container{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px 5px 20px 5px;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-searchbar__container__search-button{
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(254,21,96,1) 19%, rgba(227,20,65,1) 72%);
+    border: 0;
+}
+
+.header-searchbar__container__search-button__svg{
+    margin: 0 8px 0 8px;
+}
+.header-searchbar__container__search-button__text{
+    margin: 0 8px 0 8px;
+    color: white;
+    font-weight: 400;
+}

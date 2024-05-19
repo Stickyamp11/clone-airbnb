@@ -1,0 +1,40 @@
+.horizontal-navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: 2%;
+margin-right: 2%;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+.horizontal-navbar__logo{
+max-width: 120px;
+max-height: 40px;
+flex-grow: 1;
+}
+
+.horizontal-navbar__menu{
+    flex-grow: 7;
+}
+
+.horizontal-navbar__menu__links{
+display: flex;
+white-space: nowrap;
+}
+.horizontal-navbar__menu__links__link{
+margin-left: 2%;
+margin-right: 2%;
+text-decoration: none;
+color: grey;
+padding: 10px;
+border-radius: 30px;
+}
+.horizontal-navbar__menu__searchbar{
+flex-basis: 70%;
+}
+
+.horizontal-navbar__user{
+    flex-grow: 1;
+
+}

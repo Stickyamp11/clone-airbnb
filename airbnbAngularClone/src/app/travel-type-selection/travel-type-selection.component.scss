@@ -1,0 +1,39 @@
+.travel-type-selection__container{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.travel-type-selection__container__element{
+    display: flex;
+    flex-direction: column;
+    margin: 0 8px 0 8px;
+    align-items: center;
+    padding: 5px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.travel-type-selection__container__img{
+    margin-bottom: 4px;
+}
+
+.travel-type-selection__container__element__bar{
+    background-color: black;
+    border-radius: 10px;
+    width: 90%;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.travel-type-selection__container__back{
+border-radius: 100%;
+padding: 6px;
+border: 1px solid rgb(94, 91, 91);
+font-weight: 700;
+
+}
+.travel-type-selection__container__next{
+    border-radius: 100%;
+    padding: 6px;
+    border: 1px solid rgb(94, 91, 91);
+    font-weight: 700;
+}
