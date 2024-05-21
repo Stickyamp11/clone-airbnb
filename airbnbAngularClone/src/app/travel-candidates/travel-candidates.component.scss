@@ -1,0 +1,35 @@
+.travel-candidates{
+    width: 90%;
+    margin-left: 5%;
+}
+.travel-candidates__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.travel-candidates__container__travel{
+    flex: 1 0 20%;
+}
+
+@media (max-width: 1160px) {
+    .travel-candidates__container__travel{
+        flex: 1 0 25%;
+    }    
+}
+@media (max-width: 1024px) {
+    .travel-candidates__container__travel{
+        flex: 1 0 33%;
+    }    
+}
+@media (max-width: 632px) {
+    .travel-candidates__container__travel{
+        flex: 1 0 50%;
+    }    
+}
+
+@media (max-width: 456px) {
+    .travel-candidates__container__travel{
+        flex: 1 0 100%;
+    }    
+}

@@ -1,0 +1,20 @@
+.travel-card__section__title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel-card__section__slider{
+    border-radius: 60px;
+}
+.travel-card__section__title__rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.travel-card__section{
+    width: 100%;
+}
+.travel-card__section__wrapper{
+    margin: 10px;
+}

@@ -1,0 +1,96 @@
+
+.travel-card-slider__section{
+    position: relative;
+}
+.travel-card-slider__section__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+}
+
+.travel-card-slider__section__header__suggest{
+border-radius: 30px;
+background-color: rgba(255, 255, 255, 0.726);
+padding: 5px 10px 5px 10px;
+}
+
+.travel-card-slider__section__header__action{
+    background-color: rgba(255, 255, 255, 0.726);
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.travel-card-slider__section__header__arrows{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    top: 45%;
+    z-index: 1;
+}
+
+.travel-card-slider__section__back{
+    padding: 10px;
+border-radius: 100%;
+background-color: rgba(255, 255, 255, 0.897);
+opacity: 0;
+transition: opacity 0.2s ease-in-out;
+
+
+}
+.travel-card-slider__section__front{
+padding: 10px;
+border-radius: 100%;
+background-color: rgba(255, 255, 255, 0.897);
+opacity: 0;
+transition: opacity 0.2s ease-in-out;
+}
+
+.travel-card-slider__section__slider{
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: calc((100% / 1));
+overflow: hidden;
+width: 100%;
+aspect-ratio: 1 / 1;
+border-radius: 20px;
+}
+
+.travel-card-slider__section__slider__slide{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-size:cover;
+}
+
+.travel-card-slider__section:hover .travel-card-slider__section__front,
+.travel-card-slider__section:hover .travel-card-slider__section__back {
+    opacity: 1;
+}
+
+.travel-card-slider__section__recap{
+position: absolute;
+bottom: 4%;
+width: 100%;
+}
+.travel-card-slider__section__recap__inner{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.travel-card-slider__section__recap__dot{
+background-color: rgb(224, 222, 222);
+width: 7px;
+height: 7px;
+border-radius:100%;
+margin: 5px;
+
+}
+.travel-card-slider__section__recap__dot-active{
+    background-color: white;
+}

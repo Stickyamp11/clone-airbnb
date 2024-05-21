@@ -1,2 +1,10 @@
-<app-travel-type-selection></app-travel-type-selection>
-<p>travel-candidates works!</p>
+<div class="travel-candidates">
+    <app-travel-type-selection></app-travel-type-selection>
+    <div class="travel-candidates__container">
+        @for (i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]; track i) {
+            <div class="travel-candidates__container__travel">
+                <app-travel-card></app-travel-card>
+            </div>
+        }
+    </div>
+</div>
