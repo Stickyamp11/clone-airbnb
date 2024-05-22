@@ -5,7 +5,6 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-
 }
 
 .header-searchbar__container__search-button{
@@ -45,4 +44,22 @@ font-weight: 500;
 }
 .header-searchbar__container__element__last{
     padding-right: 50px;
+}
+
+
+@media (max-width: 730px) {
+    .header-searchbar__container__label{
+        font-size: 11px;
+    }
+    .header-searchbar__container{
+        font-size: 13px;
+    }
+    .header-searchbar__container__search-button{
+        background: none;
+        left: 4px;
+    }
+    .header-searchbar__container__element__mobile{
+        margin-left: 35px;
+        text-overflow: ellipsis;
+    }
 }

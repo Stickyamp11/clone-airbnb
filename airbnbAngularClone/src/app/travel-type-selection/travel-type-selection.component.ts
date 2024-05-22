@@ -1,5 +1,5 @@
 import { CommonModule, NgClass, NgFor, NgIf } from '@angular/common';
-import { AfterViewInit, Component, ElementRef,OnInit, ViewChild, WritableSignal, signal } from '@angular/core';
+import { AfterViewInit, Component, ElementRef,OnInit, Signal, ViewChild, WritableSignal, computed, signal } from '@angular/core';
 import { Observable,debounceTime, distinctUntilChanged, fromEvent, map } from 'rxjs';
 import { StrongTextHoverEffectDirective } from '../strong-text-hover-effect.directive';
 type SelectionInterface = {
@@ -16,8 +16,9 @@ type SelectionInterface = {
   styleUrl: './travel-type-selection.component.scss'
 })
 export class TravelTypeSelectionComponent implements OnInit, AfterViewInit {
+  mobileView: Signal<boolean> = computed(() => this.windowSizeSig() < 600 ? true : false);
   selectionItems: SelectionInterface[] = [
-    {url: "https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png", text: "Iconos", selected: false, id: 1 },
+    {url: "https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png", text: "Iconos", selected: true, id: 1 },
     {url: "https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg", text: "Iconos", selected: false, id: 2 },
     {url: "https://a0.muscache.com/pictures/251c0635-cc91-4ef7-bb13-1084d5229446.jpg", text: "Iconos", selected: false, id: 3 },
     {url: "https://a0.muscache.com/pictures/d721318f-4752-417d-b4fa-77da3cbc3269.jpg", text: "Iconos", selected: false, id: 4 },
@@ -46,7 +47,7 @@ export class TravelTypeSelectionComponent implements OnInit, AfterViewInit {
   hiddenNumberOfItemsSig: WritableSignal<number> = signal(0);
   resizeSubscription$: Observable<number> = fromEvent(window, 'resize')
   .pipe(
-    debounceTime(500),
+    debounceTime(100),
     map((event: Event) => (event.target as Window).innerWidth),
     distinctUntilChanged()
   );
